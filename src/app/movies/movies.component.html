@@ -1,0 +1,17 @@
+<p>movies works!</p>
+<div>
+        <fieldset>
+          <legend>Movies</legend>
+       <table align="center" class="tb">
+         <th>Movie Name</th>
+         <th>Select <span style="margin-left:4em"></span></th>
+              <tr  *ngFor='let i of movies , let  n = index'>
+          <td>{{i.mname}}<span style="margin-left:2.5em"></span></td>
+          <span style="margin-left:2.5em"></span><input type="radio" name='movie' (click)='postList(i.id)'>
+          <br>
+        </tr>
+      </table>
+     </fieldset>
+  
+      </div>
+ 

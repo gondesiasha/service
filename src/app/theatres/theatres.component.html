@@ -1,0 +1,21 @@
+<p>theatres works!</p>
+<div>
+        <fieldset>
+          <legend>Theaters</legend>
+      <table align="center" class="tb">
+          <th>Theater Name</th>
+          <th>Seats Capacity <span style="margin-left:2.5em"></span></th>
+          <th>Cost <span style="margin-left:2.5em"></span></th>
+          <th>Select <span style="margin-left:4em"></span></th>
+        <tr  *ngFor='let i of arr1'>
+          <td>{{i.tname}}<span style="margin-left:2.5em"></span></td>
+          <td>total seats:{{i.total_seats}}<span style="margin-left:2.5em"></span></td>
+  
+          <td> Rs.{{ c}}/- </td>
+         
+          <span style="margin-left:2.5em"></span><input style="text-align: center" type='radio' name='theater' (click)='bookingDetails(i.tname,i.avl_seats,i.tid)'>
+          <br>
+        </tr>
+      </table>
+      </fieldset>
+      </div>
